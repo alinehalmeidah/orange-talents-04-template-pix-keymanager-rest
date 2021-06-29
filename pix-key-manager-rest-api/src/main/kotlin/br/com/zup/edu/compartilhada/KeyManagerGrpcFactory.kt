@@ -15,4 +15,3 @@ class KeyManagerGrpcFactory(@GrpcChannel("KeyManager") val channel: ManagedChann
     @Singleton
     fun removeChave() = KeymanagerRemoveGrpcServiceGrpc.newBlockingStub(channel)
 }
-}
